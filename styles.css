@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family:Brown;
+    src: url(Brown\ Bold.ttf);
+}
+@font-face{
+    font-family: Brown;
+    src: url(BrownLight\ Regular.ttf);
+}
+@font-face{
+    font-family:'sofia Pro';
+    src: url(sofiapro-light.otf);
+}
+body{
+    background-color: #f0fcf6;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+@media (max-width: 430px) {
+    .form-container1, .Parent-container, .FormA, .FormB{
+        display: flex;
+        flex-direction: column;
+                        }
+  .Child-container1, .Child-container2{
+        margin-left: 10px!important; margin-top: 0px !important;
+            }
+     input, select{
+                width: 326px !important;}
+    .Parent-container{
+width: 375px !important; gap: 60px !important;
+    }
+    .image{margin-top: 40px !important;
+    }
+    
+}
+    
+    
+.Parent-container{
+    width: 1000px;
+   display: flex;
+   gap: 120px;
+    }
+
+.image{
+    width: 77.33px;
+    height: 80px;
+    margin-top: 205px;
+   }
+
+.Child-container1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+    & h3{
+        margin-top: 50px;
+    font-family: Brown;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.8px;
+        }
+& p{
+    margin-top: 20px;
+    font-family: Brown;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--CL-Grey, #737373);
+    width: 405px;
+    height: 75px;
+}
+
+}
+.form-container1{
+    display: flex;
+       gap: 10px;
+    & input, select{
+        width: 158px;
+    height: 30px; 
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+border: 1px solid var(--CL-Gray-3, #F0F0F0); 
+}
+    & ::placeholder {
+        width: 160px;
+        padding-left: 10px;
+        color: var(--CL-Grey, #737373);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0.2px;
+    }
+    & .tolu{
+        border: 1px solid #2EC4B6;
+    }
+    }
+
+    .select1{
+        width: 170px;
+        padding-left: 10px;
+        color: var(--CL-Grey, #737373);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; 
+letter-spacing: 0.2px;
+    }
+
+.Child-container2{
+       width: 380px;
+height: 480px;
+flex: 1;
+background-color: #FFFFFF;
+margin-top: 41px;
+margin-bottom: 50px;
+margin-right: 70px;
+margin-left: 60px;
+padding: 20px;
+& label{
+    width:140px ;
+       color: var(--Text-Headings, #011C34);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.1px;
+}
+
+}
+.formC{
+    display: flex;
+    flex-direction: column;}
+.activity{
+    width: 326px;
+height: 30px;
+margin-top: 5px;
+border-radius: 2px;
+border: 1px solid var(--CL-Gray-3, #F0F0F0);
+}
+
+.btn{
+    margin-top: 20px;
+}
+.btnC{
+   background-color:#2EC4B6;
+   border: 0;
+   color: var(--Basic-100, #FFF);
+text-align: center;
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.2px;
+}
+.register{
+    margin-top: 12px;
+    text-align: center;
+    color: #000;
+    font-family: Sofia Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+a{
+    color: var(--CL-Green, #2EC4B6);
+font-family: Sofia Pro;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+text-decoration-line: underline;
+}
+
+.date-input-container{
+    display: inline-flex;
+    position: relative;
+}
+.password{
+position: absolute;
+width: 13px;
+height: 13px;
+margin-left: 305px;
+margin-top: 15px;
+}
+.password-input-container{
+    display: inline-flex;
+    position: relative;
+}
